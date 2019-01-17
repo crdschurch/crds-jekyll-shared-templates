@@ -1,0 +1,100 @@
+---
+layout: container
+title: Signup Instructions | Go Local
+permalink: /golocal/about/
+---
+
+<div class="go-volunteer-container ng-scope">
+    <div class="go-volunteer soft-bottom">
+        <div class="container">
+            <div class="gv-nav ng-hide" ng-show="gvMenu">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                        <div dynamic-content="$root.MESSAGES.goCincinnatiNav.content | html">
+                            <div class="row ng-scope">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <ul class="list-unstyled text-right">
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal">Home</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/about'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Fabout">About</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/faq'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Ffaq">FAQ</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/contact'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Fcontact">Contact</a></li>
+                                        <!-- ngIf: $root.username != undefined -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header>
+                <nav class="navbar navbar-static-top">
+                    <div class="row hidden-xs">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2"> <a class="banner center-block"
+                                ui-sref="content({link:'/golocal'})" href="%2Fgolocal"> <img class="imgix-fluid"
+                                    data-src="//crds-cms-uploads.imgix.net/content/images/go-local/go-local-header.png"
+                                    alt="GO Local Banner" src="https://crds-cms-uploads.imgix.net/content/images/go-local/go-local-header.png?ixjsv=2.2.3&amp;w=140">
+                            </a> </div>
+                        <div class="col-xs-2 col-sm-1 col-md-2">
+                            <div class="hamburger-menu black" ng-click="gvMenu=!gvMenu">
+                                <div class="bar" ng-class="{'animate': gvMenu}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visible-xs text-center"> <a class="logo" ui-sref="content({link:'/golocal'})" href="%2Fgolocal">
+                            <img class="imgix-fluid" data-src="//crds-cms-uploads.imgix.net/content/images/go-local/go-local-logo.png"
+                                alt="GO Local Logo" src="https://crds-cms-uploads.imgix.net/content/images/go-local/go-local-logo.png?ixjsv=2.2.3&amp;w=120">
+                        </a>
+                        <div class="gc-menu-right hamburger-menu black" ng-click="gvMenu=!gvMenu">
+                            <div class="bar" ng-class="{'animate': gvMenu}"></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <!-- ngIf: app.resolving -->
+                    <!-- ngIf: !app.resolving -->
+                    <!-- uiView: -->
+                    <div ui-view="" ng-if="!app.resolving" class="ng-scope">
+                        <div dynamic-content="pageContent | html" class="ng-scope">
+                            <ul class="ng-scope">
+                                <li dir="ltr">
+                                    <p dir="ltr">One day. 500 projects. 10,000 volunteers.<br class="kix-line-break">On
+                                        Saturday, May 20, we’ll tackle more than 500 projects across the country. From
+                                        serving the homeless and painting schools to praying with the broken and
+                                        cleaning up neighborhoods—we’ll make a difference for hundreds of deserving
+                                        communities and organizations.<br class="kix-line-break">Every project has a
+                                        leader. One project just needs you.</p>
+                                </li>
+                                <li dir="ltr">
+                                    <p dir="ltr">Eleven Years. A lot of love.<br class="kix-line-break">God tells us to
+                                        serve those in need. To love them, learn from them, and fight for their
+                                        freedom. Every May for the last eleven years, we’ve mobilized thousands of
+                                        people to respond to God’s call.<br class="kix-line-break">Through GO
+                                        Cincinnati and Serve the City, we’ve loved hundreds of schools, churches,
+                                        neighborhoods, social agencies, and nonprofits to put our faith in action and
+                                        to say thank you for their tireless work.</p>
+                                </li>
+                                <li dir="ltr">
+                                    <p dir="ltr">Join a Project<br class="kix-line-break">Serving on GO Day is easy.</p>
+                                </li>
+                            </ul>
+                            <p dir="ltr" style="padding-left: 60px;" class="ng-scope"><span id="docs-internal-guid-9f28dd80-5eb8-fc2c-0c89-72fb918a2102">1.
+                                    Choose your city.<br class="kix-line-break">2. We match you to existing projects.
+                                    Based on need, some projects fill up fast, so sign up now.<br class="kix-line-break">3.
+                                    On GO Day, show up at the place your project leader indicates, get pumped, and get
+                                    ready to work.<br class="kix-line-break"><br class="kix-line-break"></span></p>
+                            <p dir="ltr" class="ng-scope"><span id="docs-internal-guid-9f28dd80-5eb8-fc2c-0c89-72fb918a2102">In
+                                    2017, we need 10,000 volunteers. So invite your friends and neighbors to serve with
+                                    you. They’re gonna love it.</span></p>
+                        </div>
+                    </div><!-- end ngIf: !app.resolving -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

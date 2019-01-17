@@ -1,0 +1,74 @@
+---
+layout: container
+title: Contact | Go Local
+permalink: /golocal/contact
+---
+
+<div class="go-volunteer-container ng-scope">
+    <div class="go-volunteer soft-bottom">
+        <div class="container">
+            <div class="gv-nav ng-hide" ng-show="gvMenu">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                        <div dynamic-content="$root.MESSAGES.goCincinnatiNav.content | html">
+                            <div class="row ng-scope">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <ul class="list-unstyled text-right">
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal">Home</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/about'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Fabout">About</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/faq'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Ffaq">FAQ</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/contact'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Fcontact">Contact</a></li>
+                                        <!-- ngIf: $root.username != undefined -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header>
+                <nav class="navbar navbar-static-top">
+                    <div class="row hidden-xs">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2"> <a class="banner center-block"
+                                ui-sref="content({link:'/golocal'})" href="%2Fgolocal"> <img class="imgix-fluid"
+                                    data-src="//crds-cms-uploads.imgix.net/content/images/go-local/go-local-header.png"
+                                    alt="GO Local Banner" src="https://crds-cms-uploads.imgix.net/content/images/go-local/go-local-header.png?ixjsv=2.2.3&amp;w=140">
+                            </a> </div>
+                        <div class="col-xs-2 col-sm-1 col-md-2">
+                            <div class="hamburger-menu black" ng-click="gvMenu=!gvMenu">
+                                <div class="bar" ng-class="{'animate': gvMenu}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visible-xs text-center"> <a class="logo" ui-sref="content({link:'/golocal'})" href="%2Fgolocal">
+                            <img class="imgix-fluid" data-src="//crds-cms-uploads.imgix.net/content/images/go-local/go-local-logo.png"
+                                alt="GO Local Logo" src="https://crds-cms-uploads.imgix.net/content/images/go-local/go-local-logo.png?ixjsv=2.2.3&amp;w=120">
+                        </a>
+                        <div class="gc-menu-right hamburger-menu black" ng-click="gvMenu=!gvMenu">
+                            <div class="bar" ng-class="{'animate': gvMenu}"></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <!-- ngIf: app.resolving -->
+                    <!-- ngIf: !app.resolving -->
+                    <!-- uiView: -->
+                    <div ui-view="" ng-if="!app.resolving" class="ng-scope">
+                        <div dynamic-content="pageContent | html" class="ng-scope">
+                            <h1 style="text-align: center;" class="ng-scope">Contact Us</h1>
+                            <p style="text-align: center;" class="ng-scope">Have questions about GO Local? Email us at
+                                <a class="underline" href="mailto:gocincinnati@crossroads.net">golocal@crossroads.net</a>
+                                and we'll get back to you in a jiffy.&nbsp;</p>
+                        </div>
+                    </div><!-- end ngIf: !app.resolving -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
