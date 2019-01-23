@@ -1,0 +1,122 @@
+---
+layout: container
+title: Discover Other Opportunities | Go Local
+permalink: /golocal/discover-other-opportunities
+---
+
+<div class="go-volunteer-container ng-scope">
+    <div class="go-volunteer soft-bottom">
+        <div class="container">
+            <div class="gv-nav ng-hide" ng-show="gvMenu">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                        <div dynamic-content="$root.MESSAGES.goCincinnatiNav.content | html">
+                            <div class="row ng-scope">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <ul class="list-unstyled text-right">
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal">Home</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/about'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Fabout">About</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/faq'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Ffaq">FAQ</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/contact'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Fcontact">Contact</a></li>
+                                        <!-- ngIf: $root.username != undefined -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header>
+                <nav class="navbar navbar-static-top">
+                    <div class="row hidden-xs">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2"> <a class="banner center-block"
+                                ui-sref="content({link:'/golocal'})" href="%2Fgolocal"> <img class="imgix-fluid"
+                                    data-src="//crds-cms-uploads.imgix.net/content/images/go-local/go-local-header.png"
+                                    alt="GO Local Banner" src="https://crds-cms-uploads.imgix.net/content/images/go-local/go-local-header.png?ixjsv=2.2.3&amp;w=140">
+                            </a> </div>
+                        <div class="col-xs-2 col-sm-1 col-md-2">
+                            <div class="hamburger-menu black" ng-click="gvMenu=!gvMenu">
+                                <div class="bar" ng-class="{'animate': gvMenu}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visible-xs text-center"> <a class="logo" ui-sref="content({link:'/golocal'})" href="%2Fgolocal">
+                            <img class="imgix-fluid" data-src="//crds-cms-uploads.imgix.net/content/images/go-local/go-local-logo.png"
+                                alt="GO Local Logo" src="https://crds-cms-uploads.imgix.net/content/images/go-local/go-local-logo.png?ixjsv=2.2.3&amp;w=120">
+                        </a>
+                        <div class="gc-menu-right hamburger-menu black" ng-click="gvMenu=!gvMenu">
+                            <div class="bar" ng-class="{'animate': gvMenu}"></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <!-- ngIf: app.resolving -->
+                    <!-- ngIf: !app.resolving -->
+                    <!-- uiView: -->
+                    <div ui-view="" ng-if="!app.resolving" class="ng-scope">
+                        <div dynamic-content="pageContent | html" class="ng-scope">
+                            <h1 class="ng-scope">Discover other opportunities in your city.</h1>
+                            <p dir="ltr" class="ng-scope">While there may not be an “official” project to lead in
+                                your city, there are certainly needs in your neighborhood and community. Find one
+                                on your own that the whole group can do on May 20.</p>
+                            <p class="ng-scope"></p>
+                            <p dir="ltr" class="ng-scope">If you need an idea where to look or how to help, check
+                                out some in the list below, or ask your Anywhere group these questions to get the
+                                ball rolling. The answers will help you develop a project that will be a perfect
+                                fit for your group.</p>
+                            <p class="ng-scope"></p>
+                            <p dir="ltr" class="ng-scope">• Who in your neighborhood has a need?</p>
+                            <p dir="ltr" class="ng-scope">• What non-profit organization within your sphere of
+                                influence could use a blessing?</p>
+                            <p dir="ltr" class="ng-scope">• What project types best suit your group’s ages and
+                                abilities? (gardening, party/event, organizing/cleaning, prayer, etc.)</p>
+                            <p class="ng-scope"></p>
+                            <p dir="ltr" class="ng-scope">Whatever you do, and however it goes, we want to hear
+                                about it! Share your story at&nbsp;<a href="mailto:anywherego@crossroads.net">anywherego@crossroads.net</a>.</p>
+                            <p class="ng-scope"></p>
+                            <h4 dir="ltr" class="ng-scope"></h4>
+                            <h4 dir="ltr" class="ng-scope">General Ideas</h4>
+                            <p dir="ltr" class="ng-scope">• Clean up a widow or single mom’s yard</p>
+                            <p dir="ltr" class="ng-scope">• Plan a party for foster care children. Have free food
+                                and games.</p>
+                            <p dir="ltr" class="ng-scope">• Minor car repairs for elderly, widows and/or single
+                                mom’s</p>
+                            <p dir="ltr" class="ng-scope">• Kids host a free lemonade stand</p>
+                            <p dir="ltr" class="ng-scope">• Landscaping/gardening at a local YMCA</p>
+                            <p dir="ltr" class="ng-scope">• Organize/cleaning at a food pantry</p>
+                            <p class="ng-scope"></p>
+                            <h4 dir="ltr" class="ng-scope"></h4>
+                            <h4 dir="ltr" class="ng-scope">Nursing Homes</h4>
+                            <p dir="ltr" class="ng-scope">• Landscape a flower garden and sitting area for resident</p>
+                            <p dir="ltr" class="ng-scope">• Tea Party</p>
+                            <p dir="ltr" class="ng-scope">• Help the residents complete care packages for foster
+                                kids</p>
+                            <p class="ng-scope"></p>
+                            <h4 dir="ltr" class="ng-scope"></h4>
+                            <h4 dir="ltr" class="ng-scope">Special Needs/Youth Home</h4>
+                            <p dir="ltr" class="ng-scope">• Adopt a group home for the day and throw a party for
+                                the residents</p>
+                            <p dir="ltr" class="ng-scope">• Build a wheelchair ramp for handicapped</p>
+                            <p dir="ltr" class="ng-scope">• Organize a field day for a group youth home</p>
+                            <p class="ng-scope"></p>
+                            <h4 dir="ltr" class="ng-scope"></h4>
+                            <h4 dir="ltr" class="ng-scope">Street Outreach</h4>
+                            <p dir="ltr" class="ng-scope">• Do a community trash clean up</p>
+                            <p dir="ltr" class="ng-scope">• Host a “Block Party” with free food, games, music, etc.
+                                for families</p>
+                            <p dir="ltr" class="ng-scope">• Renovate a run-down playground or park in the area</p>
+                            <p dir="ltr" class="ng-scope">• Have a “Free Grass Cutting” day</p>
+                            <p class="ng-scope"></p>
+                        </div>
+                    </div><!-- end ngIf: !app.resolving -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

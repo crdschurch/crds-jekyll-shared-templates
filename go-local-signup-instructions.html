@@ -1,0 +1,117 @@
+---
+layout: container
+title: Signup Instructions | Go Local
+permalink: /golocal/signup-instructions/
+---
+
+<div class="go-volunteer-container ">
+    <div class="go-volunteer soft-bottom">
+        <div class="container">
+            <div class="gv-nav ng-hide" ng-show="gvMenu">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                        <div dynamic-content="$root.MESSAGES.goCincinnatiNav.content | html">
+                            <div class="row ">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <ul class="list-unstyled text-right">
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal">Home</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/about'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Fabout">About</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/faq'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Ffaq">FAQ</a></li>
+                                        <li class="animated fadeInRight"><a ui-sref="content({link:'/golocal/contact'})"
+                                                ng-click="gvMenu=!gvMenu" href="%2Fgolocal%2Fcontact">Contact</a></li>
+                                        <!-- ngIf: $root.username != undefined -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header>
+                <nav class="navbar navbar-static-top">
+                    <div class="row hidden-xs">
+                        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2"> <a class="banner center-block"
+                                ui-sref="content({link:'/golocal'})" href="%2Fgolocal"> <img class="imgix-fluid"
+                                    data-src="//crds-cms-uploads.imgix.net/content/images/go-local/go-local-header.png"
+                                    alt="GO Local Banner" src="https://crds-cms-uploads.imgix.net/content/images/go-local/go-local-header.png?ixjsv=2.2.3&amp;w=140">
+                            </a> </div>
+                        <div class="col-xs-2 col-sm-1 col-md-2">
+                            <div class="hamburger-menu black" ng-click="gvMenu=!gvMenu">
+                                <div class="bar" ng-class="{'animate': gvMenu}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visible-xs text-center"> <a class="logo" ui-sref="content({link:'/golocal'})" href="%2Fgolocal">
+                            <img class="imgix-fluid" data-src="//crds-cms-uploads.imgix.net/content/images/go-local/go-local-logo.png"
+                                alt="GO Local Logo" src="https://crds-cms-uploads.imgix.net/content/images/go-local/go-local-logo.png?ixjsv=2.2.3&amp;w=120">
+                        </a>
+                        <div class="gc-menu-right hamburger-menu black" ng-click="gvMenu=!gvMenu">
+                            <div class="bar" ng-class="{'animate': gvMenu}"></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <!-- ngIf: app.resolving -->
+                    <!-- ngIf: !app.resolving -->
+                    <!-- uiView: -->
+                    <div ui-view="" ng-if="!app.resolving" class="">
+                        <div dynamic-content="pageContent | html" class="">
+                            <p class="">Before you sign up, read through these&nbsp;<strong>three</strong>&nbsp;brief
+                                instructions.</p>
+                            <div class="gc-step push-left push-top ">
+                                <div class="gc-step-number">1</div>
+                                <p class="flush-bottom bold">Does everyone sign up separately?</p>
+                                <p>If you’re a single adult, you’ll sign up yourself. If you’re married, you can sign
+                                    up your spouse and/or your family if they want to serve together.</p>
+                            </div>
+                            <div class="gc-step push-left ">
+                                <div class="gc-step-number">2</div>
+                                <p class="flush-bottom bold">What if my friend is officially leading a project and I or
+                                    my family want to be on their team?</p>
+                                <p>Answer “yes” when asked if you’re serving with a group. Select the project leader’s
+                                    name from the list and you’ll be placed on their team.</p>
+                            </div>
+                            <div class="gc-step push-left ">
+                                <div class="gc-step-number">3</div>
+                                <p class="flush-bottom bold">What if I live in Ohio or Kentucky, and I don't know a
+                                    leader, but still want to volunteer on a project with a friend or a group?</p>
+                                <p>You definitely can! Her are a few things to keep in mind before you sign up:</p>
+                            </div>
+                            <ul class="">
+                                <li>Find out who wants to serve together and the ages of any kids that might serve.</li>
+                                <li>Pick a first, second and third choice of projects. Some are more kid-friendly than
+                                    others. If you’re not sure your kids will have fun or be helpful, you might want to
+                                    make other arrangements for them that day.</li>
+                                <li>Pick the name of one member of your group to be the “Group Connector.” Everyone in
+                                    your group will select this name when they sign up.</li>
+                                <li>If you’re the Group Connector, sign up yourself (plus your family) and answer “yes”
+                                    when asked if you’re serving with a group. Then, name yourself the “Group
+                                    Connector” and pick the group’s first, second and third choice for a project.</li>
+                                <li>Now everyone else in your group can sign up. They can select the “Group
+                                    Connector’s” name from the list after selecting to serve with a group.</li>
+                            </ul>
+                            <p dir="ltr" class=""></p>
+                            <p dir="ltr" class=""><strong>Serving in an Anywhere community?</strong></p>
+                            <p dir="ltr" class=""><span>Select Anywhere and you’ll be prompted for your zip
+                                    code. If there’s a project in your city it will appear and you’ll sign-up yourself
+                                    and/or family.</span></p>
+                            <p class=""><strong>No Anywhere project in your city?</strong></p>
+                            <p dir="ltr" class=""><span>Visit the “Discover other opportunities in your city”
+                                    page to learn how you might organize a GO Local project.</span></p>
+                            <p class=""><span>&nbsp;</span></p>
+                            <p class=""></p>
+                            <p class="">Still have questions? Email&nbsp;<a href="mailto:golocal@crossroads.net">golocal@crossroads.net</a>.</p>
+                            <div class="push-half-ends "><a ui-sref="go-local.organizations({ initiativeId: 3 })"
+                                    class="btn btn-block btn-primary-gc">Continue</a></div>
+                        </div>
+                    </div><!-- end ngIf: !app.resolving -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
