@@ -3,7 +3,7 @@ layout: container-fluid
 title: Camps
 permalink: /camps/
 ---
-<div class="modal fade" id="jobsModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+<div class="modal fade" id="campModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
         <div class="modal-dialog" role="document" style="width: 60vw; margin: auto; margin-top: 50px;">
           <div class="modal-content" style="max-height: 100vh; overflow-y: auto;">
             <div class="modal-header bg-blue"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
@@ -89,13 +89,13 @@ permalink: /camps/
 </div>
 </section></div>
 
-<script id="gnewtonjs" type="text/javascript" src="https://newton.newtonsoftware.com/career/iframe.action?clientId=8a788260596d6c9b01598a494d1f69b5"></script>
+
 <script type="text/javascript">
   document.addEventListener("deferred-js-ready", function() {
-    $('#jobsModal').modal('show');
+    $('#campModal').modal('show');
   });
   // if app-deferred loads first
   if (window.deferredJSReady) {
-    $('#jobsModal').modal('show');
+    $('#campModal').modal('show');
   }
 </script>
