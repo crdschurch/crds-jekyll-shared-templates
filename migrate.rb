@@ -30,20 +30,37 @@ file_list.each do |file|
         title = extract_value(line)
       elsif line.include? "permalink: "
         permalink = extract_value(line)
+      elsif line.include? "latitude: "
+        file_content << "{% assign latitude = " + extract_value(line) + " %}\n"
+      elsif line.include? "longitude: "
+        file_content << "{% assign longitude = " + extract_value(line) + " %}\n"
+      elsif line.include? "trip_location: "
+        file_content << "{% assign trip_location = " + extract_value(line) + " %}\n"
+      elsif line.include? "legacy_styles: "
+        file_content << "{% assign legacy_styles = " + extract_value(line) + " %}\n"
+      elsif line.include? "requires_auth: "
+        file_content << "{% assign requires_auth = " + extract_value(line) + " %}\n"
+      elsif line.include? "masonry_js: "
+        file_content << "{% assign masonry_js = " + extract_value(line) + " %}\n"
+      elsif line.include? "monetate_page_type: "
+        file_content << "{% assign monetate_page_type = " + extract_value(line) + " %}\n"
+      elsif line.include? "zoom: "
+        file_content << "{% assign zoom = " + extract_value(line) + " %}\n"
       end
     elsif line.chomp != "---"
       file_content << line
     end
   end
-
-  unless layout.nil? || title.nil? || permalink.nil?
-    entry = page.entries.create(
-      title: title,
-      permalink: permalink,
-      body: file_content,
-      layout: layout
-    )
-    binding.pry
+  if permalink == '/crossroads-leadership-training/'
+    unless layout.nil? || title.nil? || permalink.nil?
+      entry = page.entries.create(
+        title: title,
+        permalink: permalink,
+        body: file_content,
+        layout: layout
+      )
+    end
+    puts "created page"
   end
   
 end
