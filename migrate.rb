@@ -1,9 +1,17 @@
 require 'pry'
 require 'contentful/management'
+require 'csv'
 
 def extract_value(line)
   line[line.index(" ") + 1,line.index("\n")].chomp
 end
+
+if File.exist?("migrated-pages.csv")
+  File.delete("migrated-pages.csv")
+end
+
+csv = CSV.open("migrated-pages.csv", "wb")
+csv << ["title","permalink","layout","requires_auth"] #header
 
 client = Contentful::Management::Client.new(ENV['CONTENTFUL_MANAGEMENT_TOKEN'])
 environment = client.environments(ENV['CONTENTFUL_SPACE_ID']).find(ENV['CONTENTFUL_ENV'])
@@ -17,6 +25,7 @@ file_list.each do |file|
   permalink = nil
   file_content = '';
   loaded_page = File.open(file)
+  requires_auth = false
   
   loaded_page.each do |line|
     if line.chomp == "---" && !title.nil?
@@ -39,7 +48,8 @@ file_list.each do |file|
       elsif line.include? "legacy_styles: "
         file_content << "{% assign legacy_styles = " + extract_value(line) + " %}\n"
       elsif line.include? "requires_auth: "
-        file_content << "{% assign requires_auth = " + extract_value(line) + " %}\n"
+        requires_auth = true
+        # file_content << "{% assign requires_auth = " + extract_value(line) + " %}\n"
       elsif line.include? "masonry_js: "
         file_content << "{% assign masonry_js = " + extract_value(line) + " %}\n"
       elsif line.include? "monetate_page_type: "
@@ -51,17 +61,20 @@ file_list.each do |file|
       file_content << line
     end
   end
-  if permalink == '/crossroads-leadership-training/'
-    unless layout.nil? || title.nil? || permalink.nil?
-      entry = page.entries.create(
-        title: title,
-        permalink: permalink,
-        body: file_content,
-        layout: layout
-      )
-    end
-    puts "created page"
-  end
+
+  file_content << "<!-- migrated from crds-net-shared -->"
+  csv << [title, permalink, layout, requires_auth]
+  # unless layout.nil? || title.nil? || permalink.nil?
+  #   entry = page.entries.create(
+  #     title: title,
+  #     permalink: permalink,
+  #     body: file_content,
+  #     layout: layout,
+  #     requires_auth: requires_auth,
+  #     search_excluded: false
+  #   )
+  # end
+  puts "created #{title}"
   
 end
 
