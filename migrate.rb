@@ -26,6 +26,7 @@ file_list.each do |file|
   file_content = '';
   loaded_page = File.open(file)
   requires_auth = false
+  monetate_page_type = ''
   
   loaded_page.each do |line|
     if line.chomp == "---" && !title.nil?
@@ -40,11 +41,11 @@ file_list.each do |file|
       elsif line.include? "permalink: "
         permalink = extract_value(line)
       elsif line.include? "latitude: "
-        file_content << "{% assign latitude = " + extract_value(line) + " %}\n"
+        file_content << "{% assign latitude = \"" + extract_value(line) + "\" %}\n"
       elsif line.include? "longitude: "
-        file_content << "{% assign longitude = " + extract_value(line) + " %}\n"
+        file_content << "{% assign longitude = \"" + extract_value(line) + "\" %}\n"
       elsif line.include? "trip_location: "
-        file_content << "{% assign trip_location = " + extract_value(line) + " %}\n"
+        file_content << "{% assign trip_location = \"" + extract_value(line) + "\" %}\n"
       elsif line.include? "legacy_styles: "
         file_content << "{% assign legacy_styles = " + extract_value(line) + " %}\n"
       elsif line.include? "requires_auth: "
@@ -52,9 +53,10 @@ file_list.each do |file|
       elsif line.include? "masonry_js: "
         file_content << "{% assign masonry_js = " + extract_value(line) + " %}\n"
       elsif line.include? "monetate_page_type: "
-        file_content << "{% assign monetate_page_type = " + extract_value(line) + " %}\n"
+        monetate_page_type = extract_value(line)
+        # file_content << "{% assign monetate_page_type = \"" + extract_value(line) + "\" %}\n"
       elsif line.include? "zoom: "
-        file_content << "{% assign zoom = " + extract_value(line) + " %}\n"
+        file_content << "{% assign zoom = \"" + extract_value(line) + "\" %}\n"
       end
     elsif line.chomp != "---"
       file_content << line
@@ -63,17 +65,21 @@ file_list.each do |file|
 
   file_content << "<!-- migrated from crds-net-shared -->"
   csv << [title, permalink, layout, requires_auth]
-  unless layout.nil? || title.nil? || permalink.nil?
-    entry = page.entries.create(
-      title: title,
-      permalink: permalink,
-      body: file_content,
-      layout: layout,
-      requires_auth: requires_auth,
-      search_excluded: false
-    )
+  if permalink == "/groups/"
+    unless layout.nil? || title.nil? || permalink.nil?
+      entry = page.entries.create(
+        title: title,
+        permalink: permalink,
+        body: file_content,
+        layout: layout,
+        requires_auth: requires_auth,
+        search_excluded: false,
+        monetate_page_type: monetate_page_type
+      )
+    end
+    puts "created #{title}"
   end
-  puts "created #{title}"
+  
   
 end
 
