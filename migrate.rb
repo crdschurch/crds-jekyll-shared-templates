@@ -49,7 +49,6 @@ file_list.each do |file|
         file_content << "{% assign legacy_styles = " + extract_value(line) + " %}\n"
       elsif line.include? "requires_auth: "
         requires_auth = true
-        # file_content << "{% assign requires_auth = " + extract_value(line) + " %}\n"
       elsif line.include? "masonry_js: "
         file_content << "{% assign masonry_js = " + extract_value(line) + " %}\n"
       elsif line.include? "monetate_page_type: "
@@ -64,16 +63,16 @@ file_list.each do |file|
 
   file_content << "<!-- migrated from crds-net-shared -->"
   csv << [title, permalink, layout, requires_auth]
-  # unless layout.nil? || title.nil? || permalink.nil?
-  #   entry = page.entries.create(
-  #     title: title,
-  #     permalink: permalink,
-  #     body: file_content,
-  #     layout: layout,
-  #     requires_auth: requires_auth,
-  #     search_excluded: false
-  #   )
-  # end
+  unless layout.nil? || title.nil? || permalink.nil?
+    entry = page.entries.create(
+      title: title,
+      permalink: permalink,
+      body: file_content,
+      layout: layout,
+      requires_auth: requires_auth,
+      search_excluded: false
+    )
+  end
   puts "created #{title}"
   
 end
