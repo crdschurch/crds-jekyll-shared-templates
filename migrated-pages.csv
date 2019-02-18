@@ -5,7 +5,7 @@ Israel Ticket Giveaway,/easter/israel-ticket-giveaway/,eight-column,false
 October Nepal Trip,/reachout/go/india/october-nepal-trip/,no-header-no-footer,false
 Info Session,/reachout/go/info-session/,no-header-no-footer,false
 moveup-hs,/studentministry/moveup-hs/,container-fluid,false
-Crossroads Leadership Training–7 Get on Mission,/crossroads-leadership-training7-get-on-mission/,container-fluid,true
+Crossroads Leadership Training–7 Get on Mission,/crossroads-leadership-training7-get-on-mission/,container-fluid,false
 Goal of Wayfinder,/wayfinder-leader-resources/goal-of-wayfinder/,eight-column,false
 Compassion,/compassion/,container-fluid,false
 FAQs South Africa,/reachout/go/faqs/faqs-south-africa/,no-header-no-footer,false
@@ -21,7 +21,6 @@ first impressions,/serve/first-impressions/,container-fluid,false
 June Trip,/reachout/go/south-africa/june-trip/,no-header-no-footer,false
 2016 Year in Review,/2016yearinreview/,eight-column,false
 FAQs,/wayfinder-leader-resources/faqs/,container-fluid,false
-Crossroads Leadership Get On Mission,/crossroads-leadership-training7-get-on-mission/,container,true
 Israel Story,/israel-story/,container-fluid,false
 March Trip,/reachout/go/south-africa/march-trip/,no-header-no-footer,false
 I Am Journey Materials,/iamjourney2/materials-2/,container-fluid,false
@@ -33,9 +32,10 @@ God is for marriage and I am too! ,/couplescamp/god-is-for-marriage-and-i-am-too
 Woman Camp - Campsite Host,/womancamp/campsitehost/,container-fluid,false
 Anywhere Resources,/anywhere-resources/,container,false
 Wheels,/reachout/local/wheels/,container-fluid,false
-Crossroads Leadership Reflection,/crossroads-leadership-training9-reflection-2/,container,true
 Nicaragua,/reachout/go/nicaragua/,no-header-no-footer,false
+"""SUMMERCAMP | Cody's Story""",/summercamp/codys-story/,container-fluid,false
 UK Engage,/uk-engage/,container-fluid,false
+Online Groups,/online-groups/,container-fluid,false
 videos,/groupleadersummit/videos/,container-fluid,false
 FAQ,/anywhere-resources/faq/,container-fluid,false
 Support Raising,/reachout/go/support-raising/,no-header-no-footer,false
@@ -44,22 +44,22 @@ Resources,/anywhere-resources/resources/,container-fluid,false
 GO Houston Content,/go-houston-content/,container-fluid,false
 I Used to Hide in Plain Sight. But Woman Camp is Freedom.,/womancamp/i-used-to-hide-in-plain-sight-but-woman-camp-is-freedom/,container-fluid,false
 Coaches,/groups/coaches/,container-fluid,false
-Crossroads Leadership Training–9 Reflection 2,/crossroads-leadership-training9-reflection-2/,container-fluid,true
+Crossroads Leadership Training–9 Reflection 2,/crossroads-leadership-training9-reflection-2/,container-fluid,false
 November Trip,/reachout/go/nicaragua/november-trip/,no-header-no-footer,false
 Man Camp Why You Should Go Back,/mancamp/man-camp-why-you-should-go-back/,container-fluid,false
 four year olds,/preschool/four-year-olds/,container-fluid,false
 Imploded Marriage. Now United.,/couplescamp/imploded-marriage-now-united/,container-fluid,false
 Wayfinder Cheat Sheet,/wayfinder-leader-resources/wayfinder-cheat-sheet/,eight-column,false
-Crossroads Leadership Get Some People,/crossroads-leadership-training6-get-some-people/,container,true
 Signup Instructions | Go Local,/golocal/signup-instructions/,container,false
 FAQ,/obsessed/faq/,container-fluid,false
-Crossroads Leadership Training–5 Reflection 1,/crossroads-leadership-training5-reflection-1/,container-fluid,true
+Crossroads Leadership Training–5 Reflection 1,/crossroads-leadership-training5-reflection-1/,container-fluid,false
 Real Encounters with God,/realencounters/,container-fluid,false
 June Trip,/reachout/go/new-orleans/june-trip/,no-header-no-footer,false
 When “Assumed” Became “Chosen” ,/womancamp/when-assumed-became-chosen/,container-fluid,false
 "Man Camp Why Do I Need Pals, Anyway?",/mancamp/man-camp-why-do-i-need-pals-anyway/,container-fluid,false
 Man Camp Courage,/mancamp/man-camp-courage/,container-fluid,false
 Anywhere Resources Kids Club,/anywhere-resources/kids-club/,container,false
+The End of the Leash,/womancamp/the-end-of-the-leash/,container-fluid,false
 Man Camp THE COURAGE TO GET REAL,/mancamp/man-camp-the-courage-to-get-real/,container-fluid,false
 Anywhere Resources Stories,/anywhere-resources/stories/,container,false
 Group Leader Summit,/groupleadersummit/,container-fluid,false
@@ -93,7 +93,7 @@ go-signin,/go-signin/,no-header-no-footer,false
 Summer Camp FAQ,/summercamp/faq,container-fluid,false
 Thanksgiving Food Drive,/reachout/local/thanksgiving-food-drive/,container-fluid,false
 ticket-giveaway,/superbowl/ticket-giveaway/,container-fluid,false
-Crossroads Leadership Training–8 Story Time 1,/crossroads-leadership-training8-story-time-1/,container-fluid,true
+Crossroads Leadership Training–8 Story Time 1,/crossroads-leadership-training8-story-time-1/,container-fluid,false
 Leader Overview,/groups/leader-overview/,container-fluid,false
 June Trip 2,/reachout/go/bolivia/june-trip-2/,no-header-no-footer,false
 Cards FOR Humanity,/cardsforhumanity/,container-fluid,false
@@ -106,7 +106,6 @@ eWIT,/reachout/local/ewit/,container-fluid,false
 July Trip,/reachout/go/nicaragua/july-trip/,no-header-no-footer,false
 Engage,/uptown/engage/,container-fluid,false
 Engage,/oxford/engage/,container-fluid,false
-Crossroads Leadership Training Get Your Orders,/crossroads-leadership-training4-get-your-orders/,container,true
 Prison Ministry,/reachout/local/prison-ministry/,container-fluid,false
 Budget,/strategy/,container-fluid,false
 Leader Resources,/groups/leader/resources/,container-fluid,false
@@ -114,7 +113,6 @@ FAQs Puerto Rico,/reachout/go/faqs/faqs-puerto-rico/,no-header-no-footer,false
 October Trip,/reachout/go/south-africa/october-trip/,no-header-no-footer,false
 ask me who loves me,/ask-me-who-loves-me/,container-fluid,false
 Group Leader Calendar,/groups/leader/resources/group-leader-calendar/,container-fluid,false
-Crossroads Leadership Training Get To Leading,/crossroads-leadership-training12-get-to-leading/,container,true
 How to Move when you get Stuck,/wayfinder-leader-resources/how-to-move-when-you-get-stuck/,container-fluid,false
 Worship Training,/worshiptraining/,no-header-no-footer,false
 Man Camp The Courage to Carry On,/mancamp/man-camp-courage-to-carry-on/,container-fluid,false
@@ -124,20 +122,20 @@ Kentucky Refugee Ministry,/reachout/local/kentucky-refugee-ministry/,container-f
 Man Camp I Think I Want To Go BUT...,/mancamp/man-camp-i-think-i-want-to-go-but/,container-fluid,false
 "I Belong, Now",/womancamp/i-belong-now/,container-fluid,false
 BLOC Ministries,/reachout/local/bloc/,container-fluid,false
-Crossroads Leadership Training–11 Story Time 2,/crossroads-leadership-training11-story-time-2/,container-fluid,true
+Crossroads Leadership Training–11 Story Time 2,/crossroads-leadership-training11-story-time-2/,container-fluid,false
 What does camping have to do with my marriage?,/couplescamp/what-does-camping-have-to-do-with-my-marriage/,container-fluid,false
 KIds Club Concert,/kcconcert/,container-fluid,false
 Giving,/giving/,container-fluid,false
 About Spark,/spark/about/,container-fluid,false
 October Trip 2019,/reachout/go/bolivia/october-trip-2019/,no-header-no-footer,false
 Summer Camp,/summercamp/,container-fluid,false
-Crossroads Leadership Training–12 Get to Leading,/crossroads-leadership-training12-get-to-leading/,container-fluid,true
+Crossroads Leadership Training–12 Get to Leading,/crossroads-leadership-training12-get-to-leading/,container-fluid,false
 audition,/worshiptraining/audition/,no-header-no-footer,false
 Easter Music,/eastermusic/,container-fluid,false
 Camp Payments,/camp-payments/,container-fluid,false
 June Trip,/reachout/go/nicaragua/june-trip/,no-header-no-footer,false
 FAQs New Orleans,/reachout/go/faqs/faqs-new-orleans/,no-header-no-footer,false
-Crossroads Leadership Training–4 Get your Orders,/crossroads-leadership-training4-get-your-orders/,container-fluid,true
+Crossroads Leadership Training–4 Get your Orders,/crossroads-leadership-training4-get-your-orders/,container-fluid,false
 HS Camps,/hs-camps/,container-fluid,false
 groups UP,/groups/groups-up/,container-fluid,false
 Bolivia,/reachout/go/bolivia/,no-header-no-footer,false
@@ -145,10 +143,9 @@ groups IN,/groups/groups-in/,container-fluid,false
 Seeking,/wayfinder-leader-resources/seeking/,container-fluid,false
 student ministry,/serve/student-ministry/,container-fluid,false
 NOT a Camper. Wrecked and Amazed.,/couplescamp/not-a-camper-wrecked-and-amazed/,container-fluid,false
-Crossroads Leadership Training–6 Get some People,/crossroads-leadership-training6-get-some-people/,container-fluid,true
+Crossroads Leadership Training–6 Get some People,/crossroads-leadership-training6-get-some-people/,container-fluid,false
 Invite People to Your Group,/groups/leader/resources/invitingpeople/,container,false
 Baptism,/baptism/,container,false
-Crossroads Leadership Training,/crossroads-leadership-training2-you-as-a-disciple/,container,true
 FAQ | Go Local,/golocal/faq,container,false
 Resources,/groups/resources/,container-fluid,false
 HR,/hr/,container-fluid,false
@@ -157,14 +154,12 @@ June Trip,/reachout/go/india/june-trip/,no-header-no-footer,false
 Go Local,/golocal/,container-fluid,false
 July Trip,/reachout/go/india/july-trip/,no-header-no-footer,false
 Wedding Resources,/care/weddings/wedding-resources/,eight-column,false
-Crossroads Leadership Training Get Some Rhythms,/crossroads-leadership-training10-get-some-rhythms/,container,true
 Your Role,/wayfinder-leader-resources/your-role/,container-fluid,false
 groups GETTING STARTED,/groups/groups-getting-started/,container-fluid,false
 Adventure Ride,/adv/,container-fluid,false
 The Business of Success,/the-business-of-success/,container-fluid,false
 Before Woman Camp,/beforewomancamp/,container-fluid,false
 Safe Families,/reachout/local/safe-families/,container-fluid,false
-Crossroads Leadership Training Reflection,/crossroads-leadership-training5-reflection-1/,container,true
 Journey Materials,/obsessed/materials/,container-fluid,false
 Our Superficial Was Stripped Away,/womancamp/our-superficial-was-stripped-away/,container-fluid,false
 Producing,/wayfinder-leader-resources/producing/,container-fluid,false
@@ -196,8 +191,8 @@ Man Camp What’s up with booze at a Church Camp?,/mancamp/man-camp-whats-up-wit
 Go,/reachout/go/,no-header-no-footer,false
 Resubscribe,/resubscribe/,eight-column,false
 two year olds,/preschool/two-year-olds/,container-fluid,false
-Crossroads Leadership Training–1 Intro,/crossroads-leadership-training/,container-fluid,true
-Crossroads Leadership Training,/crossroads-leadership-training/,container,false
+Crossroads Leadership Training–1 Intro,/crossroads-leadership-training/,container-fluid,false
+Huddle,/huddle/,container-fluid,false
 Download Cards For Humanity,/cardsforhumanity/download-cards-for-humanity/,container-fluid,true
 Mirrors of Truth,/womancamp/mirrors-of-truth/,container-fluid,false
 Next BIG Thing FAQ,/big/next-big-thing-faq/,container,false
@@ -205,16 +200,16 @@ August Trip 2,/reachout/go/south-africa/august-trip-2/,no-header-no-footer,false
 Super Bowl Volunteers,/superbowlvolunteers/,container-fluid,false
 I'm In Celebration,/imincelebration/,container-fluid,false
 August Trip,/reachout/go/south-africa/august-trip/,no-header-no-footer,false
+"""SUMMERCAMP | Pat's Story""",/summercamp/pats-story/,container-fluid,false
 "Divorced, Remarried, Went to Camp.",/couplescamp/divorced-remarried-went-to-camp/,container-fluid,false
 BIG,/big/,container-fluid,false
-Crossroads Leadership Training Get In The Swing,/crossroads-leadership-training3-get-in-the-swing/,container,true
 College Camp,/collegecamp/,container-fluid,false
 FAQs India,/reachout/go/faqs/faqs-india/,no-header-no-footer,false
 I Am ____,/i-am-statement/,container-fluid,false
 "I Came Exhausted, Left Transformed",/womancamp/i-came-exhausted-left-transformed/,container-fluid,false
 Camp Songs Vol. 1,/camp-songs-vol-1/,no-header-no-footer,false
 FAQs,/mancamp/faqs/,eight-column,false
-Crossroads Leadership Training–2 Follow First,/crossroads-leadership-training2-you-as-a-disciple/,container-fluid,true
+Crossroads Leadership Training–2 Follow First,/crossroads-leadership-training2-you-as-a-disciple/,container-fluid,false
 groups OUT,/groups/groups-out/,container-fluid,false
 India,/reachout/go/india/,no-header-no-footer,false
 Serve,/serve/,container-fluid,false
@@ -228,6 +223,7 @@ Signup Instructions | Go Local,/golocal/about/,container,false
 Leading from Here to There,/wayfinder-leader-resources/leading-from-here-to-there/,eight-column,false
 Undivided,/undivided/,container-fluid,false
 Leader Update,/groups/leader/leader-update/,container-fluid,false
+"""A New Year: A New Mission for Woman Camp""",/womancamp/a-new-year-a-new-mission-for-woman-camp/,container-fluid,false
 App,/app/,container-fluid,false
 Real Encounters with God,/real/,container-fluid,false
 November Trip,/reachout/go/south-africa/november-trip/,no-header-no-footer,false
@@ -240,6 +236,7 @@ The New Mind Postcard,/newmind/,container-fluid,false
 Don't Know What To Do,/wayfinder-leader-resources/dont-know-what-to-do/,container-fluid,false
 MAN CAMP,/mancamp/,container-fluid,false
 Woman Camp,/womancamp/,container-fluid,false
+"""SUMMERCAMP | Abbey's Story""",/summercamp/abbeys-story/,container-fluid,false
 Easter,/easter/,container-fluid,false
 Contact | Go Local,/golocal/contact,container,false
 Student Ministry,/studentministry/,container-fluid,false
@@ -251,9 +248,9 @@ GO India Newsletter - July 2018,/go-india-newsletter-july-2018/,container-fluid,
 four year olds - full week,/preschool/four-year-olds-full-week/,container-fluid,false
 High School,/highschool/,container-fluid,false
 Wayfinder Leader Resources,/wayfinder-leader-resources/,container-fluid,false
-Crossroads Leadership Training–10 Get some Rhythms,/crossroads-leadership-training10-get-some-rhythms/,container-fluid,true
+Crossroads Leadership Training–10 Get some Rhythms,/crossroads-leadership-training10-get-some-rhythms/,container-fluid,false
 Coalition to End Child Sexual Abuse (CECSA),/cecsa/,container-fluid,false
-Crossroads Leadership Training–3 Get in the Swing,/crossroads-leadership-training3-get-in-the-swing/,container-fluid,true
+Crossroads Leadership Training–3 Get in the Swing,/crossroads-leadership-training3-get-in-the-swing/,container-fluid,false
 Atrium Events,/atriumevents,default,false
 Ash Wednesday Experience,/ash-wednesday-experience/,no-header-no-footer,false
 Family Meeting Stream,/family-meeting-stream/,container-fluid,false
