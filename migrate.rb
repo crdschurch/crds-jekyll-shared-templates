@@ -11,7 +11,7 @@ if File.exist?("migrated-pages.csv")
 end
 
 csv = CSV.open("migrated-pages.csv", "wb")
-csv << ["title","permalink","layout","requires_auth"] #header
+csv << ["title","permalink","layout","requires_auth", "entry_id"] #header
 
 client = Contentful::Management::Client.new(ENV['CONTENTFUL_MANAGEMENT_TOKEN'])
 environment = client.environments(ENV['CONTENTFUL_SPACE_ID']).find(ENV['CONTENTFUL_ENV'])
@@ -63,7 +63,6 @@ file_list.each do |file|
   end
 
   file_content << "<!-- migrated from crds-net-shared -->"
-  csv << [title, permalink, layout, requires_auth]
   if permalink == "/anywhere-resources/resources/"
     unless layout.nil? || title.nil? || permalink.nil?
       entry = page.entries.create(
@@ -75,8 +74,7 @@ file_list.each do |file|
         search_excluded: false,
         monetate_page_type: monetate_page_type
       )
-      binding.pry
-      csv << [title, permalink, layout, requires_auth]
+      csv << [title, permalink, layout, requires_auth, entry.id]
     end
     entry.save
     entry.publish
