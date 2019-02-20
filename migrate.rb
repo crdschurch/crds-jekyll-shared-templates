@@ -54,7 +54,6 @@ file_list.each do |file|
         file_content << "{% assign masonry_js = " + extract_value(line) + " %}\n"
       elsif line.include? "monetate_page_type: "
         monetate_page_type = extract_value(line)
-        # file_content << "{% assign monetate_page_type = \"" + extract_value(line) + "\" %}\n"
       elsif line.include? "zoom: "
         file_content << "{% assign zoom = \"" + extract_value(line) + "\" %}\n"
       end
@@ -65,7 +64,7 @@ file_list.each do |file|
 
   file_content << "<!-- migrated from crds-net-shared -->"
   csv << [title, permalink, layout, requires_auth]
-  if permalink == "/groups/"
+  if permalink == "/anywhere-resources/resources/"
     unless layout.nil? || title.nil? || permalink.nil?
       entry = page.entries.create(
         title: title,
@@ -76,7 +75,11 @@ file_list.each do |file|
         search_excluded: false,
         monetate_page_type: monetate_page_type
       )
+      binding.pry
+      csv << [title, permalink, layout, requires_auth]
     end
+    entry.save
+    entry.publish
     puts "created #{title}"
   end
   
