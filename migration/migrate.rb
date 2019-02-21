@@ -64,26 +64,29 @@ file_list.each do |file|
 
   file_content << "<!-- migrated from crds-net-shared -->"
 
-  unless layout.nil? || title.nil? || permalink.nil?
-    begin
-      entry = page.entries.create(
-        title: title,
-        permalink: permalink,
-        body: file_content,
-        layout: layout,
-        requires_auth: requires_auth,
-        search_excluded: false,
-        monetate_page_type: monetate_page_type
-      )
-      entry.save
-      entry.publish
-      csv << [title, permalink, layout, requires_auth, entry.id]
-    rescue => exception
-      puts "Had an issue creating title: #{title} permalink: #{permalink}"
-      next
+  if permalink = '/spark/'
+    unless layout.nil? || title.nil? || permalink.nil?
+      begin
+        entry = page.entries.create(
+          title: title,
+          permalink: permalink,
+          body: file_content,
+          layout: layout,
+          requires_auth: requires_auth,
+          search_excluded: false,
+          monetate_page_type: monetate_page_type
+        )
+        unless permalink == '/realencounters/'
+          entry.save
+          entry.publish
+          csv << [title, permalink, layout, requires_auth, entry.id]
+        end
+      rescue => exception
+        puts "Had an issue creating title: #{title} permalink: #{permalink}"
+        next
+      end
     end
-
+  
+    puts "created #{title}"
   end
-
-  puts "created #{title}"
 end
