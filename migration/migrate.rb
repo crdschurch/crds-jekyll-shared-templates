@@ -63,8 +63,8 @@ file_list.each do |file|
   end
 
   file_content << "<!-- migrated from crds-net-shared -->"
-
-  if permalink = '/spark/'
+  
+  if permalink == '/reachout/go/faqs/faqs-puerto-rico/'
     unless layout.nil? || title.nil? || permalink.nil?
       begin
         entry = page.entries.create(
