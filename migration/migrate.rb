@@ -87,7 +87,3 @@ file_list.each do |file|
 
   puts "created #{title}"
 end
-
-
-
-
