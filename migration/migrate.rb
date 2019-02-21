@@ -17,7 +17,7 @@ client = Contentful::Management::Client.new(ENV['CONTENTFUL_MANAGEMENT_TOKEN'])
 environment = client.environments(ENV['CONTENTFUL_SPACE_ID']).find(ENV['CONTENTFUL_ENV'])
 page = environment.content_types.find('page')
 
-file_list = Dir["./*.html"]
+file_list = Dir["./../*.html"]
 file_list.each do |file|
   frontmatter = true
   layout = nil
@@ -63,25 +63,24 @@ file_list.each do |file|
   end
 
   file_content << "<!-- migrated from crds-net-shared -->"
-  if permalink == "/anywhere-resources/serving/"
-    unless layout.nil? || title.nil? || permalink.nil?
-      entry = page.entries.create(
-        title: title,
-        permalink: permalink,
-        body: file_content,
-        layout: layout,
-        requires_auth: requires_auth,
-        search_excluded: false,
-        monetate_page_type: monetate_page_type
-      )
-      csv << [title, permalink, layout, requires_auth, entry.id]
-    end
+
+  unless layout.nil? || title.nil? || permalink.nil?
+    entry = page.entries.create(
+      title: title,
+      permalink: permalink,
+      body: file_content,
+      layout: layout,
+      requires_auth: requires_auth,
+      search_excluded: false,
+      monetate_page_type: monetate_page_type
+    )
     entry.save
     entry.publish
-    puts "created #{title}"
+    csv << [title, permalink, layout, requires_auth, entry.id]
+    binding.pry
   end
-  
-  
+
+  puts "created #{title}"
 end
 
 
