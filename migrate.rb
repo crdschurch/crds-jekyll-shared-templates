@@ -47,7 +47,7 @@ file_list.each do |file|
       elsif line.include? "trip_location: "
         file_content << "{% assign trip_location = \"" + extract_value(line) + "\" %}\n"
       elsif line.include? "legacy_styles: "
-        file_content << "{% assign legacy_styles = " + extract_value(line) + " %}\n"
+        file_content << "<link rel=\"stylesheet\" href=\"/assets/static/legacy.min.css\">"
       elsif line.include? "requires_auth: "
         requires_auth = true
       elsif line.include? "masonry_js: "
@@ -63,7 +63,7 @@ file_list.each do |file|
   end
 
   file_content << "<!-- migrated from crds-net-shared -->"
-  if permalink == "/anywhere-resources/resources/"
+  if permalink == "/anywhere-resources/serving/"
     unless layout.nil? || title.nil? || permalink.nil?
       entry = page.entries.create(
         title: title,
