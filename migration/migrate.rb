@@ -51,7 +51,7 @@ file_list.each do |file|
       elsif line.include? "requires_auth: "
         requires_auth = true
       elsif line.include? "masonry_js: "
-        file_content << "{% assign masonry_js = " + extract_value(line) + " %}\n"
+        file_content << "{% javascript_link_tag masonry_deferred async %}"
       elsif line.include? "monetate_page_type: "
         monetate_page_type = extract_value(line)
       elsif line.include? "zoom: "
@@ -63,8 +63,8 @@ file_list.each do |file|
   end
 
   file_content << "<!-- migrated from crds-net-shared -->"
-  
-  if permalink == '/reachout/go/faqs/faqs-puerto-rico/'
+
+  if permalink == '/groups/groups-getting-started/' || permalink == '/groups/groups-in/' || permalink == '/groups/groups-out/' || permalink == '/groups/groups-up/' || permalink == '/spark/'
     unless layout.nil? || title.nil? || permalink.nil?
       begin
         entry = page.entries.create(
